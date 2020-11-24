@@ -1,24 +1,7 @@
-input.onButtonPressed(Button.A, function () {
-    basic.showLeds(`
-        . . # . .
-        . . . # .
-        # # # # #
-        . . . # .
-        . . # . .
-        `)
+radio.onReceivedNumber(function (receivedNumber) {
+    basic.showNumber(receivedNumber)
 })
-input.onButtonPressed(Button.AB, function () {
-    basic.showIcon(IconNames.Happy)
-})
-input.onButtonPressed(Button.B, function () {
-    basic.showLeds(`
-        . . # . .
-        . # . . .
-        # # # # #
-        . # . . .
-        . . # . .
-        `)
-})
+radio.setGroup(10)
 basic.forever(function () {
 	
 })
